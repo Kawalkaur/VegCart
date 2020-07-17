@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">VegCart</string>
+    <string name="logo">Logo</string>
+    <string name="alreadylogin">Already login? <u>Sign in</u></string>
+    <string name="newUser">New customer? <u>Sign up Here</u></string>
+
+</resources>

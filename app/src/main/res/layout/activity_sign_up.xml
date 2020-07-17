@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="GULATI MART"
+        android:fontFamily="@font/gotham"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:layout_marginStart="40dp"
+    android:layout_marginEnd="40dp"
+    android:background="#F0F8F3"
+    android:orientation="vertical">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/layoutName"
+        android:hint="Enter name"
+        android:layout_marginTop = "8dp"
+        android:layout_marginStart = "8dp"
+        android:layout_marginEnd = "8dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:id = "@+id/name"
+            android:drawablePadding="8dp"
+            android:textSize="15sp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:inputType = "textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/layoutEmail"
+        android:layout_marginTop = "8dp"
+        android:hint="Enter email"
+        android:layout_marginStart = "8dp"
+        android:textColorHint="@color/black"
+        android:layout_marginEnd = "8dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:id = "@+id/email"
+            android:padding="8dp"
+            android:textSize="15sp"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:textColorHint="@color/black"
+            android:inputType = "textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/layoutPhone"
+        android:layout_marginTop = "8dp"
+        android:layout_marginStart = "8dp"
+        android:hint="Mobile"
+        android:textColorHint="@color/black"
+        android:layout_marginEnd = "8dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:id = "@+id/phone"
+            android:padding="8dp"
+            android:textSize="15sp"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:textColorHint="@color/black"
+            android:inputType = "textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/layoutPassword"
+        android:layout_marginTop = "8dp"
+        android:layout_marginStart = "8dp"
+        android:hint="Password"
+        android:textColorHint="@color/black"
+        android:layout_marginEnd = "8dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:id = "@+id/password"
+            android:padding="8dp"
+            android:textSize="15sp"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_email_black_24dp"
+            android:textColorHint="@color/black"
+            android:inputType = "textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/spinnerArea"
+        android:layout_width="match_parent"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="8dp"
+        android:layout_height="40dp" />
+    <!--<Spinner
+        android:id="@+id/spinnerArea"
+        android:layout_width="match_parent"
+        android:spinnerMode="dialog"
+        android:layout_gravity="start"
+        android:layout_marginStart="18dp"
+        android:popupBackground="#cccccc"
+        android:layout_marginEnd="8dp"
+        android:layout_height="50dp"/>
+-->
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="15sp"
+        android:gravity="bottom"
+        android:text="Area"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/area"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="15sp"
+        android:gravity="bottom"
+        android:layout_marginStart="8dp"
+        android:text=""
+        android:textColor="@color/black"/>-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/layoutCity"
+        android:layout_marginTop = "10dp"
+        android:layout_marginStart = "8dp"
+        android:hint="City"
+        android:textColorHint="@color/black"
+        android:layout_marginEnd = "8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:drawableStart="@drawable/ic_email_black_24dp"
+            android:drawablePadding="8dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:padding="8dp"
+            android:text="Ludhiana"
+            android:textColorHint="@color/black"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>
+        <Button
+            android:id="@+id/createAccount"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:text="Create Account"
+            android:background="@drawable/round_shape_btn"
+            android:layout_gravity="center"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/alreadyUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alreadylogin"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="9dp"
+            android:textSize="20sp"/>
+    </LinearLayout>
+</ScrollView>

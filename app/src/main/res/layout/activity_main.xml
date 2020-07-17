@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_white"
+    tools:context=".activities.MainActivity">
+
+  <!--  <RelativeLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    <com.glide.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>-->
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="175dp">
+            <com.glide.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        <!--    <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:text="My Profile"/>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/user"
+                android:layout_alignParentEnd="true">
+                
+            </ImageView>-->
+        </RelativeLayout>
+         <GridLayout
+      android:columnCount="2"
+      android:rowCount="2"
+      android:alignmentMode="alignMargins"
+      android:columnOrderPreserved="false"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <!-- Row 1 -->
+      <!-- Column 1 -->
+      <androidx.cardview.widget.CardView
+          android:id="@+id/vegetablesCard"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_columnWeight="1"
+          android:layout_rowWeight="1"
+          android:layout_margin="12dp"
+          app:cardElevation="6dp"
+          app:cardCornerRadius="12dp">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:layout_margin="16dp"
+              android:padding="16dp"
+              android:gravity="center">
+              <ImageView
+                  android:layout_width="80dp"
+                  android:layout_height="80dp"
+                  android:layout_row="0"
+                  android:layout_column="0"
+                  android:src="@drawable/vegetable" />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textStyle="bold"
+                  android:text="Vegetables"
+                  android:textSize="18sp"
+                  android:textColor="@android:color/black"
+                  android:layout_marginTop="12dp"/>
+
+          </LinearLayout>
+      </androidx.cardview.widget.CardView>
+             <androidx.cardview.widget.CardView
+                 android:id="@+id/fruitsCard"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_columnWeight="1"
+                 android:layout_rowWeight="1"
+                 android:layout_margin="12dp"
+                 app:cardElevation="6dp"
+                 app:cardCornerRadius="12dp">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="vertical"
+                     android:layout_margin="16dp"
+                     android:padding="16dp"
+                     android:gravity="center">
+                     <ImageView
+                         android:src="@drawable/fruits"
+                         android:layout_width="80dp"
+                         android:layout_height="80dp"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:textStyle="bold"
+                         android:text="Fruits"
+                         android:textSize="18sp"
+                         android:textColor="@android:color/black"
+                         android:layout_marginTop="12dp"/>
+
+                 </LinearLayout>
+             </androidx.cardview.widget.CardView>
+
+
+             <!--&lt;!&ndash; Column 2 &ndash;&gt;
+             <androidx.cardview.widget.CardView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="8dp"
+                 android:layout_marginLeft="8dp"
+                 android:layout_marginRight="8dp"
+                 app:cardElevation="8dp"
+                 app:cardCornerRadius="8dp">
+
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     android:layout_margin="16dp"
+                     android:layout_gravity="center_horizontal|center_vertical">
+                     <ImageView
+                         android:src="@drawable/veg"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center_horizontal"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:textStyle="bold"
+                         android:textSize="18sp"
+                         android:textColor="@android:color/black"
+                         android:textAlignment="center"/>
+                 </LinearLayout>
+             </androidx.cardview.widget.CardView>
+             &lt;!&ndash; Row 1 &ndash;&gt;
+             &lt;!&ndash; Column 1 &ndash;&gt;
+             <androidx.cardview.widget.CardView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="8dp"
+                 android:layout_marginLeft="8dp"
+                 android:layout_marginRight="8dp"
+                 app:cardElevation="8dp"
+                 app:cardCornerRadius="8dp">
+
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     android:layout_margin="16dp"
+                     android:layout_gravity="center_horizontal|center_vertical">
+                     <ImageView
+                         android:src="@drawable/veg"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center_horizontal"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:textStyle="bold"
+                         android:textSize="18sp"
+                         android:textColor="@android:color/black"
+                         android:textAlignment="center"/>
+                 </LinearLayout>
+             </androidx.cardview.widget.CardView>
+             &lt;!&ndash; Column 2 &ndash;&gt;
+             <androidx.cardview.widget.CardView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="8dp"
+                 android:layout_marginLeft="8dp"
+                 android:layout_marginRight="8dp"
+                 app:cardElevation="8dp"
+                 app:cardCornerRadius="8dp">
+
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     android:layout_margin="16dp"
+                     android:layout_gravity="center_horizontal|center_vertical">
+                     <ImageView
+                         android:src="@drawable/veg"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center_horizontal"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:textStyle="bold"
+                         android:textSize="18sp"
+                         android:textColor="@android:color/black"
+                         android:textAlignment="center"/>
+                 </LinearLayout>
+             </androidx.cardview.widget.CardView>-->
+  </GridLayout>
+    </LinearLayout>
+
+</ScrollView>
